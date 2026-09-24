@@ -26,26 +26,28 @@ Ye ek `dist/` folder banayega jo Vercel, Netlify, ya kisi bhi static host pe upl
 
 ## Vercel pe deploy kaise karein
 
-Project pehle se Vercel ke liye ready hai — `vercel.json` already configured hai.
+Project pehle se Vercel ke liye ready hai — `MZeeshan/vercel.json` mein build settings already configured hain.
+
+**Important:** Project repo ka root nahi hai — ye `MZeeshan/` subfolder mein hai. Isliye Vercel import karte waqt **Root Directory = `MZeeshan`** set karna zuroori hai (neeche steps 4–5).
 
 ### Option 1 — GitHub se (recommended)
 
 1. GitHub par ek naya repository banao (jaise `mzeeshan-portfolio`) aur ye code push karo.
 2. [vercel.com](https://vercel.com) par login karo → **Add New → Project**.
 3. Apni GitHub repo **import** karo.
-4. Vercel khud **Framework = Vite**, **Build Command = `npm run build`**, aur **Output Directory = `dist`** detect kar lega.
-   - Agar Root Directory manually set karni ho to **`MZeeshan`** select karo (root `vercel.json` already ye set karta hai).
-5. **Deploy** dabao — bas, website live!
+4. **Configure Project** screen par **Root Directory** ke saamne **Edit** dabao aur `MZeeshan` select karo.
+5. Framework **Vite** auto-detect ho jayega — Build Command `npm run build` aur Output Directory `dist` already `vercel.json` mein set hain.
+6. **Deploy** dabao — bas, website live!
 
 ### Option 2 — Vercel CLI se (without GitHub)
 
-```
+```bash
 cd MZeeshan
 npm i -g vercel
 vercel
 ```
 
-CLI khud project detect karke deploy kar dega.
+`MZeeshan` folder ke andar se `vercel` chalane se wahi Root Directory ban jata hai — CLI khud project detect karke deploy kar dega.
 
 ### Deploy ke baad
 
