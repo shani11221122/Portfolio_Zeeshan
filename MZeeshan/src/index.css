@@ -1,0 +1,43 @@
+/* These three lines pull in Tailwind's engine. Tailwind reads our
+   classes (like "bg-base" or "flex") straight from our JSX files and
+   generates only the CSS we actually use. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth; /* clicking a nav link glides to the section instead of jumping */
+}
+
+body {
+  background-color: #090d16;
+  color: #eef2fa;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Respect people who've asked their OS to reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Reusable "glass" panel effect used by the navbar and the status card */
+.glass {
+  background: rgba(18, 26, 43, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+/* Thin accent line used at the top of the hero's status card */
+.accent-line {
+  background: linear-gradient(90deg, #34d399, #7c8cf8);
+}
