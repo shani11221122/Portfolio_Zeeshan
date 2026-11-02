@@ -37,6 +37,14 @@ const PROJECTS = [
     tech: ["React", "Vite", "Node.js", "Express"],
     link: "https://ecommerce-website-project-h3qs.vercel.app/",
   },
+    {
+    title: "Later-Capsule — Save your Data for Later",
+    description:
+       "A secure digital time-capsule platform where users can create, encrypt, and store personal memories, photos, videos, and messages that unlock automatically on a specified future date.",
+    image: "/assets/projects/later-capsules-hero.png",
+    tech: ["React", "Vite", "Node.js", "Express"],
+    link: "https://later-capsules.vercel.app/",
+  },
 ];
 
 const GITHUB_ALL_PROJECTS = "https://tinyurl.com/eyax3ydz";
