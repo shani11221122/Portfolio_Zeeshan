@@ -41,7 +41,7 @@ const PROJECTS = [
     title: "Later-Capsule — Save your Data for Later",
     description:
        "A secure digital time-capsule platform where users can create, encrypt, and store personal memories, photos, videos, and messages that unlock automatically on a specified future date.",
-    image: "/assets/projects/later-capsules-hero.png",
+    image: "/assets/projects/later-capsules.png",
     tech: ["React", "Vite", "Node.js", "Express"],
     link: "https://later-capsules.vercel.app/",
   },

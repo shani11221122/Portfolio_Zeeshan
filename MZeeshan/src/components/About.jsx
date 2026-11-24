@@ -38,7 +38,7 @@ export default function About() {
             <div className="glass rounded-2xl p-3 max-w-sm mx-auto lg:mx-0">
               <div className="accent-line h-[3px] w-full rounded-full mb-3" />
               <img
-                src="/assets/profile/profile.jpg"
+                src="/assets/profile/profiles.jpeg"
                 alt="Muhammad Zeeshan"
                 className="rounded-xl w-full h-auto object-cover grayscale-[15%]"
               />
