@@ -72,7 +72,7 @@ vercel
 MZeeshan/
 ├── public/
 │   └── assets/
-│       ├── profile/profile.jpg
+│       ├── profile/Profiles.jpeg
 │       ├── projects/            (screenshots used in Projects section)
 │       └── certificates/        (NeuroFive internship certificate — PDF + PNG)
 ├── src/
@@ -99,4 +99,3 @@ MZeeshan/
 - **Resume link**: `Navbar.jsx` aur `Hero.jsx` mein `CV_LINK` variable edit karo.
 - **Colors**: `tailwind.config.js` mein `colors` object edit karo (emerald, indigo, base, etc.).
 - **Monitoring Dashboard project ka screenshot**: `Projects.jsx` mein us project ke object mein `image: null` ko screenshot ke path se replace karo, aur image file `public/assets/projects/` mein daal do.
-
